@@ -1,3 +1,8 @@
+<!-- Loads path to static files -->
+{% load static %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="{% static 'music/style.css' %}" />
+
 {% if all_albums %}
     <h3>Here are all my Albums:</h3>
     <ul>
