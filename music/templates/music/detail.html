@@ -1,6 +1,6 @@
 {% extends 'music/base.html' %}
 
-{% block title %} Album details {% endblock %}
+{% block title %} Album Details {% endblock %}
 
 {% block body %}
 
@@ -26,7 +26,7 @@
             <label for="song{{ forloop.counter }} ">
                 {{ song.song_title }}
                 {% if song.is_favorite %}
-                    <img src="music/1200px-Gold_Star.svg" /> <!--not valid image****-->
+                    <img src="templates/music/1200px-Gold_Star.svg" /> <!--not valid image****-->
                 {% endif %}
             </label><br>
         {% endfor %}
